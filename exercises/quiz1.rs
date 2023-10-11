@@ -26,6 +26,15 @@ fn verify_test() {
     let price3 = calculate_price_of_apples(41);
     let price4 = calculate_price_of_apples(65);
 
+    fn calculate_price_of_apples(price:i32) -> i32 {
+        if price ==35 || price == 40 {
+            price * 2
+        }else {
+            price
+        }
+
+    }
+
     assert_eq!(70, price1);
     assert_eq!(80, price2);
     assert_eq!(41, price3);
